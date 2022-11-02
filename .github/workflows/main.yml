@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - arqui
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+        with:
+          heroku_email: "rzagza039@gmail.com"
+          heroku_api_key: 2fe158d4-9cb3-45f4-b5be-babcc6dfbc5d
+          heroku_app_name: "2fe158d4-9cb3-45f4-b5be-babcc6dfbc5d"
